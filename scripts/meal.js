@@ -1,9 +1,15 @@
 console.log('connected');
 
+let allCategories = [];
+
 const loadCategories = () => {
     fetch('https://www.themealdb.com/api/json/v1/1/categories.php')
     .then((response) => response.json())
-    .then((data) => displayCategories(data.categories))
+    .then((data) => {
+        allCategories = data.categories
+        console.log(allCategories);
+        displayCategories(allCategories.slice(0,5))
+    })
     .catch((err) => console.log(err));
 };
 
@@ -28,5 +34,10 @@ const displayCategories = (categories) => {
         categoriesContainer.append(div);
     })
 }
+
+document.getElementById('btn-showAll').addEventListener('click', function(){
+    displayCategories(allCategories);
+    document.getElementById('btn-showAll').classList = 'hidden';
+});
 
 loadCategories();
