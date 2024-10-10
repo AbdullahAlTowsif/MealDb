@@ -15,6 +15,7 @@ const loadCategories = () => {
 
 const displayCategories = (categories) => {
     const categoriesContainer = document.getElementById('categories');
+    categoriesContainer.innerHTML = "";
     categories.forEach((item) => {
         // console.log(item.strCategory)
         const div = document.createElement('div');
