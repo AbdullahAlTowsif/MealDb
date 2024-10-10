@@ -34,7 +34,7 @@
     <title>Meal</title>
 </head>
 
-<body>
+<body class="font-poppins">
     <header>
         <nav class="container mx-auto">
             <div class="flex justify-between mt-2 p-2">
@@ -42,7 +42,7 @@
                 <button class="btn bg-primary font-bold">Sign Up</button>
             </div>
         </nav>
-        <section class="m-2 flex flex-col justify-center items-center text-center bg-cover py-40 space-y-5 mt-5"
+        <section class="m-2 lg:m-0 flex flex-col justify-center items-center text-center bg-cover py-40 space-y-5 mt-5"
             style="background-image: url('images/banner_1.png');">
             <h1 class="text-7xl font-bold text-white">Taste Our Delicious <br> Best Foods</h1>
             <p class="text-lg font-normal text-white">There are many variations of passages of Lorem Ipsum
@@ -65,8 +65,44 @@
         <div id="categories" class="p-2 grid grid-cols-1 lg:grid-cols-2 gap-5">
             
         </div>
+        <div class="flex justify-center items-center mt-5">
+            <button class="btn bg-primary font-bold text-secondary">Show All</button>
+        </div>
     </main>
-    <footer></footer>
+    <footer class="bg-yellow-50 mt-5">
+        <div class="container mx-auto flex justify-between py-16">
+            <div class="space-y-2">
+                <h1 class="text-2xl font-bold">Section</h1>
+                <p class="text-xl font-normal">Home</p>
+                <p class="text-xl font-normal">Features</p>
+                <p class="text-xl font-normal">Pricing</p>
+                <p class="text-xl font-normal">FAQs</p>
+                <p class="text-xl font-normal">About</p>
+            </div>
+            <div class="space-y-2">
+                <h1 class="text-2xl font-bold">Section</h1>
+                <p class="text-xl font-normal">UIUX Design</p>
+                <p class="text-xl font-normal">Product Design</p>
+                <p class="text-xl font-normal">Backend Developer</p>
+                <p class="text-xl font-normal">Front End Developer</p>
+            </div>
+            <div class="space-y-2">
+                <h1 class="text-2xl font-bold">Resource</h1>
+                <p class="text-xl font-normal">FAQ</p>
+                <p class="text-xl font-normal">Support</p>
+                <p class="text-xl font-normal">Privacy Policy</p>
+                <p class="text-xl font-normal">Terms of Service</p>
+            </div>
+            <div class="space-y-2">
+                <h1 class="text-2xl font-bold">Subscribe to our newsletter</h1>
+                <p class="text-xl font-normal text-slate-600">There are many variations of passages of available, but the majority have suffered</p>
+                <div class="flex">
+                    <input class="rounded-lg pl-2 border border-slate-600 mr-2" type="text" placeholder="Email address">
+                    <button class="btn bg-primary text-secondary font-extrabold">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="scripts/meal.js"></script>
 </body>
 
