@@ -41,4 +41,6 @@ document.getElementById('btn-showAll').addEventListener('click', function(){
     document.getElementById('btn-showAll').classList = 'hidden';
 });
 
+
+
 loadCategories();
